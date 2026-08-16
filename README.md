@@ -121,12 +121,12 @@ is a request, each column an iteration, color shows prefill vs. decode vs.
 waiting vs. finished. You can watch D and E sit in `waiting` until A or B
 frees a slot in the running set:
 
-![scheduling timeline](benchmarks/schedule_timeline.png)
+![scheduling timeline](schedule_timeline.png)
 
 And a snapshot of the block pool itself (`benchmarks/block_allocation.png`)
 partway through the same run:
 
-![block allocation](benchmarks/block_allocation.png)
+![block allocation](block_allocation.png)
 
 ```bash
 python scripts/visualize_demo.py
