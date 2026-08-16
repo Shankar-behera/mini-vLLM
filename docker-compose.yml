@@ -1,0 +1,12 @@
+services:
+  mini-vllm:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MINI_VLLM_NUM_BLOCKS=2048
+      - MINI_VLLM_BLOCK_SIZE=16
+      - MINI_VLLM_MAX_NUM_SEQS=32
+      - MINI_VLLM_MAX_BATCHED_TOKENS=4096
+      - MINI_VLLM_PREFILL_CHUNK=512
+    restart: unless-stopped
